@@ -1,0 +1,13 @@
+body {
+    background-color: $primaryColor
+}
+
+main {
+    width: 100%;
+    max-width: 850px;
+    margin: 30px auto;
+    background-color: $secondaryColor;
+    padding: 40px 20px 20px 20px;
+    border-radius: 10px;
+    box-sizing: border-box
+}

@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/partials/_variables.scss",
+		"../scss/partials/_layout.scss"
+	],
+	"sourcesContent": [
+		"@import \"partials/variables\";\n@import \"partials/layout\";",
+		"$primaryColor: hotpink;\n$secondaryColor: #fff;",
+		"body {\n    background-color: $primaryColor\n}\n\nmain {\n    width: 100%;\n    max-width: 850px;\n    margin: 30px auto;\n    background-color: $secondaryColor;\n    padding: 40px 20px 20px 20px;\n    border-radius: 10px;\n    box-sizing: border-box\n}"
+	],
+	"names": [],
+	"mappings": "AEAA,AAAA,IAAI,CAAC;EACD,gBAAgB,EDDL,OAAO,GCErB;;AAED,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,SAAS;EACjB,gBAAgB,EDPH,IAAI;ECQjB,OAAO,EAAE,mBAAmB;EAC5B,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,UAChB,GAAC"
+}
