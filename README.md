@@ -1,19 +1,22 @@
 # Slot Maschine
 
-## blanco
+## (1) blanco
 ![Screenshot](assets/img/screenshot.png "Desktop version")
 
-## "Unfortunately you lost!"
+## (2) Play!
+![Screenshot](assets/img/screenshot-x.gif "Desktop version")
+
+## (3) "Unfortunately you lost!"
 ![Screenshot](assets/img/screenshot-0.png "Desktop version")
 
-## "You have won 5 coins!"
+## or (3) "You have won 5 coins!"
 ![Screenshot](assets/img/screenshot-1b.png "Desktop version")
 ![Screenshot](assets/img/screenshot-1a.png "Desktop version")
 
-## "Congrats! You have won 50 coins!"
+## or (3) "Congrats! You have won 50 coins!"
 ![Screenshot](assets/img/screenshot-2.png "Desktop version")
 
-## "JACKPOT! You have won 750 coins!"
+## or maybe (3) "JACKPOT! You have won 750 coins!"
 ![Screenshot](assets/img/screenshot-3.png "Desktop version")
 
 ---
