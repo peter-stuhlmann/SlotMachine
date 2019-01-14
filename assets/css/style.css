@@ -26,13 +26,17 @@ h2 {
   .slotMaschine-columns #column2,
   .slotMaschine-columns #column3 {
     flex: 0 0 32%;
-    height: 100px;
+    height: 250px;
     background-color: hotpink;
     border-radius: 10px;
     padding: 20px 27px;
     box-sizing: border-box;
     font-size: 50px;
     text-align: center; }
+    .slotMaschine-columns #column1 img,
+    .slotMaschine-columns #column2 img,
+    .slotMaschine-columns #column3 img {
+      width: 100%; }
 
 .chance-of-winning {
   margin: 0 0 20px 0; }
