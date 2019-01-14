@@ -82,7 +82,7 @@ main {
         height: 40px;
         vertical-align: middle
     }
-    
+
     #bet {
         flex: 0 0 40%;
         height: 40px
@@ -92,4 +92,13 @@ main {
         flex: 0 0 45%;
         height: 40px
     }
+}
+
+
+
+// Information output
+
+#information {
+    font-size: 2em;
+    font-weight: bold
 }
