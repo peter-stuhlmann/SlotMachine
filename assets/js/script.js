@@ -39,7 +39,8 @@ function slotMachine_round() {
                 document.getElementById("column2").style.backgroundColor = "blue"
                 document.getElementById("column3").style.backgroundColor = "blue"
 
-                document.getElementById("information").innerHTML = `You have won the JACKPOT!`
+                let profit = parseInt(document.getElementById("bet").value) * 750 // probability 1/1000
+                document.getElementById("information").innerHTML = `JACKPOT! You have won ${profit} coins!`
 
             } else {
                 if (column1 == column2 && column2 == column3) {
@@ -47,7 +48,8 @@ function slotMachine_round() {
                     document.getElementById("column2").style.backgroundColor = "green"
                     document.getElementById("column3").style.backgroundColor = "green"
 
-                    document.getElementById("information").innerHTML = `You have won!`
+                    let profit = parseInt(document.getElementById("bet").value) * 50 // probability 1/100
+                    document.getElementById("information").innerHTML = `Congrats! You have won ${profit} coins!`
 
                 } else {
                     if (column1 == column2) {
@@ -55,7 +57,8 @@ function slotMachine_round() {
                         document.getElementById("column2").style.backgroundColor = "yellow"
                         document.getElementById("column3").style.backgroundColor = "red"
 
-                        document.getElementById("information").innerHTML = `Cool!`
+                        let profit = parseInt(document.getElementById("bet").value) * 5 // probability 1/10
+                        document.getElementById("information").innerHTML = `You have won ${profit} coins!`
 
                     } else {
                         if (column2 == column3) {
@@ -63,8 +66,9 @@ function slotMachine_round() {
                             document.getElementById("column2").style.backgroundColor = "yellow"
                             document.getElementById("column3").style.backgroundColor = "yellow"
 
-                            document.getElementById("information").innerHTML = `Cool!`
-
+                            let profit = parseInt(document.getElementById("bet").value) * 5 // probability 1/10
+                            document.getElementById("information").innerHTML = `You have won ${profit} coins!`
+                            
                         } else {
                             document.getElementById("column1").style.backgroundColor = "red"
                             document.getElementById("column2").style.backgroundColor = "red"
@@ -85,7 +89,7 @@ function slotMachine_reset() {
 
     // to play it several times (reset i from 19 to 1 after every round)
     i = 1;
-    
+
     // reset the background-color after every round
     document.getElementById("wuerfel1").style.backgroundColor = "hotpink";
     document.getElementById("wuerfel2").style.backgroundColor = "hotpink";
