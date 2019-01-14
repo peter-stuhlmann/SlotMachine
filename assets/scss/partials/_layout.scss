@@ -45,7 +45,7 @@ main {
 #winning-combinations-1,
 #winning-combinations-2,
 #winning-combinations-3 {
-    margin: 0 5px 0 60px  
+    margin: 0 5px 0 60px
 }
 
 
@@ -67,3 +67,29 @@ main {
     color: red
 }
 
+
+
+
+// Input field and button
+
+.play-the-game {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+
+    input {
+        flex: 0 0 30%;
+        height: 40px;
+        vertical-align: middle
+    }
+    
+    #bet {
+        flex: 0 0 40%;
+        height: 40px
+    }
+
+    #play-button {
+        flex: 0 0 45%;
+        height: 40px
+    }
+}

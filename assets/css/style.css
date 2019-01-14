@@ -47,4 +47,19 @@ main {
 .bg-red {
   color: red; }
 
+.play-the-game {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0; }
+  .play-the-game input {
+    flex: 0 0 30%;
+    height: 40px;
+    vertical-align: middle; }
+  .play-the-game #bet {
+    flex: 0 0 40%;
+    height: 40px; }
+  .play-the-game #play-button {
+    flex: 0 0 45%;
+    height: 40px; }
+
 /*# sourceMappingURL=style.css.map */
