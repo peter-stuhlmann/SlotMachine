@@ -10,6 +10,14 @@ main {
   border-radius: 10px;
   box-sizing: border-box; }
 
+h1 {
+  margin-bottom: 0; }
+
+h2 {
+  margin: 0 0 50px 0;
+  font-size: 1em;
+  font-weight: normal; }
+
 .slotMaschine-columns {
   display: flex;
   justify-content: space-between;
