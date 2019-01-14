@@ -30,3 +30,9 @@ function slotMachine_round() {
         } 
     }, 100) // 100 = 1/10 second
 }
+
+
+
+// buttons on HTML page
+
+document.querySelector('#play-button').addEventListener('click', slotMachine_round);
