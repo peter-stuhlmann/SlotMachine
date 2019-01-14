@@ -13,3 +13,20 @@ function slotMachine_randomize() {
     document.getElementById("column3").innerHTML = column3
     
 }
+
+
+
+let i = 1;
+
+function slotMachine_round() {
+    
+    // 19 numbers will be displayed; display duration of each number
+    
+    setTimeout(function () {
+        slotMachine_randomize();
+        i++;
+        if (i < 20) { // 19 numbers
+            slotMachine_round();
+        } 
+    }, 100) // 100 = 1/10 second
+}
