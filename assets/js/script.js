@@ -78,8 +78,16 @@ function slotMachine_round() {
 
 function slotMachine_reset() {
 
-    // to play it several times (reset i from 19 to 1)
+    // to play it several times (reset i from 19 to 1 after every round)
     i = 1;
+    
+    // reset the background-color after every round
+    document.getElementById("wuerfel1").style.backgroundColor = "hotpink";
+    document.getElementById("wuerfel2").style.backgroundColor = "hotpink";
+    document.getElementById("wuerfel3").style.backgroundColor = "hotpink";
+
+    // reset the content of #ginformation after every round
+    document.getElementById("information").innerHTML = ""
 }
 
 
