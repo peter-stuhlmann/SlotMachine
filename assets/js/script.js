@@ -1,3 +1,8 @@
+// Input field #bet
+let bet = document.getElementById("bet").value
+
+
+
 function slotMachine_randomize() {
 
     // integer random number between 0 and <1 multiplied by 10
