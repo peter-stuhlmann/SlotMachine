@@ -9,8 +9,8 @@
 	"sourcesContent": [
 		"@import \"partials/variables\";\n@import \"partials/layout\";",
 		"$primaryColor: hotpink;\n$secondaryColor: #fff;",
-		"body {\n    background-color: $primaryColor\n}\n\nmain {\n    width: 100%;\n    max-width: 850px;\n    margin: 30px auto;\n    background-color: $secondaryColor;\n    padding: 40px 20px 20px 20px;\n    border-radius: 10px;\n    box-sizing: border-box\n}"
+		"body {\n    background-color: $primaryColor\n}\n\nmain {\n    width: 100%;\n    max-width: 850px;\n    margin: 30px auto;\n    background-color: $secondaryColor;\n    padding: 40px 20px 20px 20px;\n    border-radius: 10px;\n    box-sizing: border-box\n}\n\n\n// 3 columns \n\n.slotMaschine-columns {\n    display: flex;\n    justify-content: space-between;\n    margin: 20px 0;\n\n    #column1,\n    #column2,\n    #column3 {\n        flex: 0 0 32%;\n        height: 100px;\n        background-color: $primaryColor;\n        border-radius: 10px;\n        padding: 20px 27px;\n        box-sizing: border-box;\n        font-size: 50px;\n        text-align: center\n    }\n}"
 	],
 	"names": [],
-	"mappings": "AEAA,AAAA,IAAI,CAAC;EACD,gBAAgB,EDDL,OAAO,GCErB;;AAED,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,SAAS;EACjB,gBAAgB,EDPH,IAAI;ECQjB,OAAO,EAAE,mBAAmB;EAC5B,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,UAChB,GAAC"
+	"mappings": "AEAA,AAAA,IAAI,CAAC;EACD,gBAAgB,EDDL,OAAO,GCErB;;AAED,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,SAAS;EACjB,gBAAgB,EDPH,IAAI;ECQjB,OAAO,EAAE,mBAAmB;EAC5B,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,UAChB,GAAC;;AAKD,AAAA,qBAAqB,CAAC;EAClB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,MAAM,EAAE,MAAM,GAcjB;EAjBD,AAKI,qBALiB,CAKjB,QAAQ;EALZ,qBAAqB,CAMjB,QAAQ;EANZ,qBAAqB,CAOjB,QAAQ,CAAC;IACL,IAAI,EAAE,OAAO;IACb,MAAM,EAAE,KAAK;IACb,gBAAgB,ED3BT,OAAO;IC4Bd,aAAa,EAAE,IAAI;IACnB,OAAO,EAAE,SAAS;IAClB,UAAU,EAAE,UAAU;IACtB,SAAS,EAAE,IAAI;IACf,UAAU,EAAE,MAChB,GAAC"
 }

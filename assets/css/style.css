@@ -10,4 +10,20 @@ main {
   border-radius: 10px;
   box-sizing: border-box; }
 
+.slotMaschine-columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0; }
+  .slotMaschine-columns #column1,
+  .slotMaschine-columns #column2,
+  .slotMaschine-columns #column3 {
+    flex: 0 0 32%;
+    height: 100px;
+    background-color: hotpink;
+    border-radius: 10px;
+    padding: 20px 27px;
+    box-sizing: border-box;
+    font-size: 50px;
+    text-align: center; }
+
 /*# sourceMappingURL=style.css.map */
