@@ -27,14 +27,57 @@ function slotMachine_round() {
         i++;
         if (i < 20) { // 19 numbers
             slotMachine_round();
-        } 
+        } else {
+
+            if (column1 == 0 && column2 == 0 && column3 == 0) {
+                document.getElementById("column1").style.backgroundColor = "blue"
+                document.getElementById("column2").style.backgroundColor = "blue"
+                document.getElementById("column3").style.backgroundColor = "blue"
+
+                document.getElementById("information").innerHTML = `You have won the JACKPOT!`
+
+            } else {
+                if (column1 == column2 && column2 == column3) {
+                    document.getElementById("column1").style.backgroundColor = "green"
+                    document.getElementById("column2").style.backgroundColor = "green"
+                    document.getElementById("column3").style.backgroundColor = "green"
+
+                    document.getElementById("information").innerHTML = `You have won!`
+
+                } else {
+                    if (column1 == column2) {
+                        document.getElementById("column1").style.backgroundColor = "yellow"
+                        document.getElementById("column2").style.backgroundColor = "yellow"
+                        document.getElementById("column3").style.backgroundColor = "red"
+
+                        document.getElementById("information").innerHTML = `Cool!`
+
+                    } else {
+                        if (column2 == column3) {
+                            document.getElementById("column1").style.backgroundColor = "red"
+                            document.getElementById("column2").style.backgroundColor = "yellow"
+                            document.getElementById("column3").style.backgroundColor = "yellow"
+
+                            document.getElementById("information").innerHTML = `Cool!`
+
+                        } else {
+                            document.getElementById("column1").style.backgroundColor = "red"
+                            document.getElementById("column2").style.backgroundColor = "red"
+                            document.getElementById("column3").style.backgroundColor = "red"
+
+                            document.getElementById("information").innerHTML = "Unfortunately you lost!"
+                        }
+                    }
+                }
+            }
+        }
     }, 100) // 100 = 1/10 second
 }
 
 
 
 function slotMachine_reset() {
-    
+
     // to play it several times (reset i from 19 to 1)
     i = 1;
 }
