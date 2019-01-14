@@ -91,9 +91,9 @@ function slotMachine_reset() {
     i = 1;
 
     // reset the background-color after every round
-    document.getElementById("wuerfel1").style.backgroundColor = "hotpink";
-    document.getElementById("wuerfel2").style.backgroundColor = "hotpink";
-    document.getElementById("wuerfel3").style.backgroundColor = "hotpink";
+    document.getElementById("column1").style.backgroundColor = "hotpink";
+    document.getElementById("column2").style.backgroundColor = "hotpink";
+    document.getElementById("column3").style.backgroundColor = "hotpink";
 
     // reset the content of #ginformation after every round
     document.getElementById("information").innerHTML = ""
