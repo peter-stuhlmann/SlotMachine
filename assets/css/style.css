@@ -82,6 +82,16 @@ h2 {
   font-weight: bold;
   height: 40px; }
 
+.account-balance {
+  font-size: 1em;
+  float: right;
+  background-color: hotpink;
+  border-radius: 10px;
+  padding: 5px 15px; }
+
+#account-balance {
+  font-size: 45px; }
+
 footer {
   width: 100%;
   max-width: 850px;
