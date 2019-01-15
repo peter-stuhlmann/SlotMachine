@@ -182,6 +182,8 @@ function slotMachine_round() {
 
                 let profit = parseInt(document.getElementById("bet").value) * 750 // probability 1/1000
                 document.getElementById("information").innerHTML = `JACKPOT! You have won ${profit} coins!`
+                
+                slotMachine_profits(profit)
 
             } else {
                 if (column1 == column2 && column2 == column3) {
@@ -191,6 +193,8 @@ function slotMachine_round() {
 
                     let profit = parseInt(document.getElementById("bet").value) * 50 // probability 1/100
                     document.getElementById("information").innerHTML = `Congrats! You have won ${profit} coins!`
+                    
+                    slotMachine_profits(profit)
 
                 } else {
                     if (column1 == column2) {
@@ -200,6 +204,8 @@ function slotMachine_round() {
 
                         let profit = parseInt(document.getElementById("bet").value) * 5 // probability 1/10
                         document.getElementById("information").innerHTML = `You have won ${profit} coins!`
+                        
+                        slotMachine_profits(profit)
 
                     } else {
                         if (column2 == column3) {
@@ -209,6 +215,8 @@ function slotMachine_round() {
 
                             let profit = parseInt(document.getElementById("bet").value) * 5 // probability 1/10
                             document.getElementById("information").innerHTML = `You have won ${profit} coins!`
+                            
+                            slotMachine_profits(profit)
 
                         } else {
                             document.getElementById("column1").style.backgroundColor = "red"
@@ -216,6 +224,8 @@ function slotMachine_round() {
                             document.getElementById("column3").style.backgroundColor = "red"
 
                             document.getElementById("information").innerHTML = "Unfortunately you lost!"
+                            
+                            slotMachine_profits(profit)
                         }
                     }
                 }
@@ -251,9 +261,21 @@ document.getElementById("account-balance").innerHTML = creditStandard
 
 function slotMachine_losses() {
     
-    // Losses (bets)
+    // Losses (bets); subtract the bets from the credit
 
     let creditNew = parseInt(document.getElementById("account-balance").innerHTML) - parseInt(document.getElementById("bet").value)
+
+    document.getElementById("account-balance").innerHTML = creditNew
+
+}
+
+
+
+function slotMachine_profits(profit) {
+
+    // Profits; add profits to the credit
+
+    let creditNew = parseInt(document.getElementById("account-balance").innerHTML) + profit
 
     document.getElementById("account-balance").innerHTML = creditNew
 
