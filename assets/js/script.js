@@ -293,8 +293,25 @@ function slotMachine_profits(profit) {
 
 
 
+// Payouts (possible profits)
+
+function slotMachine_possibleProfits() {
+    
+let winningCombinations1 = parseInt(document.getElementById("bet").value) * 5 // yellow = x x y / y x x
+let winningCombinations2 = parseInt(document.getElementById("bet").value) * 50 // green = x x x
+let winningCombinations3 = parseInt(document.getElementById("bet").value) * 750 // blue = 0 0 0
+
+document.getElementById("winning-combinations-1").innerHTML = winningCombinations1;
+document.getElementById("winning-combinations-2").innerHTML = winningCombinations2;
+document.getElementById("winning-combinations-3").innerHTML = winningCombinations3;
+
+}
+
+
+
 // buttons on HTML page
 
 document.querySelector('#play-button').addEventListener('click', slotMachine_round);
 document.querySelector('#play-button').addEventListener('click', slotMachine_reset);
 document.querySelector('#play-button').addEventListener('click', slotMachine_losses);
+document.querySelector('#play-button').addEventListener('click', slotMachine_possibleProfits);
