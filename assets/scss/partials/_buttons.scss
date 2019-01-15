@@ -1,0 +1,35 @@
+.sm-button-3d {
+    position: relative;
+    top: -6px;
+    border: 0;
+    transition: all 40ms linear;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+
+    &:active:focus,
+    &:focus:hover,
+    &:focus {
+        -moz-outline-style: none;
+        outline: medium none
+    }
+
+    &:active {
+        top: 2px
+    }
+}
+
+
+// Play button
+
+#play-button {
+    box-shadow: 0 0 0 1px #b93802 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #AA0000, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    background-color: #D73814;
+    border-radius: 10px;
+
+    &:active {
+        box-shadow: 0 0 0 1px #b93802 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+        background-color: #D73814
+    }
+}
