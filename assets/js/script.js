@@ -241,7 +241,28 @@ function slotMachine_reset() {
 }
 
 
+
+// Account balance
+
+let creditStandard = 100 // 100 coins
+
+document.getElementById("account-balance").innerHTML = creditStandard
+
+
+function slotMachine_losses() {
+    
+    // Losses (bets)
+
+    let creditNew = parseInt(document.getElementById("account-balance").innerHTML) - parseInt(document.getElementById("bet").value)
+
+    document.getElementById("account-balance").innerHTML = creditNew
+
+}
+
+
+
 // buttons on HTML page
 
 document.querySelector('#play-button').addEventListener('click', slotMachine_round);
 document.querySelector('#play-button').addEventListener('click', slotMachine_reset);
+document.querySelector('#play-button').addEventListener('click', slotMachine_losses);
