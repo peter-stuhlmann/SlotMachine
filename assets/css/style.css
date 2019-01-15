@@ -92,6 +92,9 @@ h2 {
 #account-balance {
   font-size: 45px; }
 
+audio {
+  display: none; }
+
 footer {
   width: 100%;
   max-width: 850px;
