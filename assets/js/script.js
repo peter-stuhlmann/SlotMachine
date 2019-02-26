@@ -9,155 +9,59 @@ function slotMachine_randomize() {
     // result is output on the HTML page in the element with the ID column1 respectively column2 respectively column3#play-button
 
 
-    // column1
+    const randomize_image = (elementId) => {
 
-    column1 = Math.floor(Math.random() * 10);
+        column = Math.floor(Math.random() * 10);
 
-    switch (column1) {
+        switch (column) {
 
-        case 0:
-            column1 = `<img src="assets/img/dollar.png">`;
-            break;
+            case 0:
+                column = `<img src="assets/img/dollar.png">`;
+                break;
 
-        case 1:
-            column1 = `<img src="assets/img/coconut.png">`;
-            break;
+            case 1:
+                column = `<img src="assets/img/coconut.png">`;
+                break;
 
-        case 2:
-            column1 = `<img src="assets/img/bananas.png">`;
-            break;
+            case 2:
+                column = `<img src="assets/img/bananas.png">`;
+                break;
 
-        case 3:
-            column1 = `<img src="assets/img/kiwi.png">`;
-            break;
+            case 3:
+                column = `<img src="assets/img/kiwi.png">`;
+                break;
 
-        case 4:
-            column1 = `<img src="assets/img/watermelon.png">`;
-            break;
+            case 4:
+                column = `<img src="assets/img/watermelon.png">`;
+                break;
 
-        case 5:
-            column1 = `<img src="assets/img/cherry.png">`;
-            break;
+            case 5:
+                column = `<img src="assets/img/cherry.png">`;
+                break;
 
-        case 6:
-            column1 = `<img src="assets/img/orange.png">`;
-            break;
+            case 6:
+                column = `<img src="assets/img/orange.png">`;
+                break;
 
-        case 7:
-            column1 = `<img src="assets/img/tomato.png">`;
-            break;
+            case 7:
+                column = `<img src="assets/img/tomato.png">`;
+                break;
 
-        case 8:
-            column1 = `<img src="assets/img/apple.png">`;
-            break;
+            case 8:
+                column = `<img src="assets/img/apple.png">`;
+                break;
 
-        case 9:
-            column1 = `<img src="assets/img/strawberry.png">`;
-            break;
+            case 9:
+                column = `<img src="assets/img/strawberry.png">`;
+                break;
+        }
+
+        document.getElementById(elementId).innerHTML = column
     }
 
-    document.getElementById("column1").innerHTML = column1
-
-
-    // column2
-
-    column2 = Math.floor(Math.random() * 10);
-
-    switch (column2) {
-
-        case 0:
-            column2 = `<img src="assets/img/dollar.png">`;
-            break;
-
-        case 1:
-            column2 = `<img src="assets/img/coconut.png">`;
-            break;
-
-        case 2:
-            column2 = `<img src="assets/img/bananas.png">`;
-            break;
-
-        case 3:
-            column2 = `<img src="assets/img/kiwi.png">`;
-            break;
-
-        case 4:
-            column2 = `<img src="assets/img/watermelon.png">`;
-            break;
-
-        case 5:
-            column2 = `<img src="assets/img/cherry.png">`;
-            break;
-
-        case 6:
-            column2 = `<img src="assets/img/orange.png">`;
-            break;
-
-        case 7:
-            column2 = `<img src="assets/img/tomato.png">`;
-            break;
-
-        case 8:
-            column2 = `<img src="assets/img/apple.png">`;
-            break;
-
-        case 9:
-            column2 = `<img src="assets/img/strawberry.png">`;
-            break;
+    for (let i = 1; i < 4; i++) {
+        randomize_image(`column${i}`)
     }
-
-    document.getElementById("column2").innerHTML = column2
-
-
-    // column3
-
-    column3 = Math.floor(Math.random() * 10);
-
-    switch (column3) {
-
-        case 0:
-            column3 = `<img src="assets/img/dollar.png">`;
-            break;
-
-        case 1:
-            column3 = `<img src="assets/img/coconut.png">`;
-            break;
-
-        case 2:
-            column3 = `<img src="assets/img/bananas.png">`;
-            break;
-
-        case 3:
-            column3 = `<img src="assets/img/kiwi.png">`;
-            break;
-
-        case 4:
-            column3 = `<img src="assets/img/watermelon.png">`;
-            break;
-
-        case 5:
-            column3 = `<img src="assets/img/cherry.png">`;
-            break;
-
-        case 6:
-            column3 = `<img src="assets/img/orange.png">`;
-            break;
-
-        case 7:
-            column3 = `<img src="assets/img/tomato.png">`;
-            break;
-
-        case 8:
-            column3 = `<img src="assets/img/apple.png">`;
-            break;
-
-        case 9:
-            column3 = `<img src="assets/img/strawberry.png">`;
-            break;
-    }
-
-    document.getElementById("column3").innerHTML = column3
-
 }
 
 
