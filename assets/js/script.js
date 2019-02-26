@@ -175,7 +175,7 @@ function slotMachine_round() {
             slotMachine_round();
         } else {
 
-            if (column1 == 0 && column2 == 0 && column3 == 0) {
+            if (column1 == '<img src="assets/img/dollar.png">' && column2 == '<img src="assets/img/dollar.png">' && column3 == '<img src="assets/img/dollar.png">') {
                 document.getElementById("column1").style.backgroundColor = "blue"
                 document.getElementById("column2").style.backgroundColor = "blue"
                 document.getElementById("column3").style.backgroundColor = "blue"
