@@ -309,7 +309,9 @@ function slotMachine_possibleProfits() {
 
 // buttons on HTML page
 
-document.querySelector('#play-button').addEventListener('click', slotMachine_round);
-document.querySelector('#play-button').addEventListener('click', slotMachine_reset);
-document.querySelector('#play-button').addEventListener('click', slotMachine_losses);
-document.querySelector('#play-button').addEventListener('click', slotMachine_possibleProfits);
+document.querySelector('#play-button').addEventListener('click', function () {
+    slotMachine_round()
+    slotMachine_reset()
+    slotMachine_losses()
+    slotMachine_possibleProfits()
+})
