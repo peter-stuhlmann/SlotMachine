@@ -182,9 +182,9 @@ function slotMachine_round() {
 
                 let profit = parseInt(document.getElementById("bet").value) * 750 // probability 1/1000
                 document.getElementById("information").innerHTML = `JACKPOT! You have won ${profit} coins!`
-                
+
                 document.getElementById("audio").innerHTML = `<audio autoplay controls> <source src= "assets/audio/jingle-1.mp3" type = "audio/mpeg"> </audio>`
-                
+
                 slotMachine_profits(profit)
 
             } else {
@@ -195,9 +195,9 @@ function slotMachine_round() {
 
                     let profit = parseInt(document.getElementById("bet").value) * 50 // probability 1/100
                     document.getElementById("information").innerHTML = `Congrats! You have won ${profit} coins!`
-                    
+
                     document.getElementById("audio").innerHTML = `<audio autoplay controls> <source src= "assets/audio/jingle-1.mp3" type = "audio/mpeg"> </audio>`
-                    
+
                     slotMachine_profits(profit)
 
                 } else {
@@ -208,9 +208,9 @@ function slotMachine_round() {
 
                         let profit = parseInt(document.getElementById("bet").value) * 5 // probability 1/10
                         document.getElementById("information").innerHTML = `You have won ${profit} coins!`
-                        
+
                         document.getElementById("audio").innerHTML = `<audio autoplay controls> <source src= "assets/audio/coins-xl.mp3" type = "audio/mpeg"> </audio>`
-                        
+
                         slotMachine_profits(profit)
 
                     } else {
@@ -221,9 +221,9 @@ function slotMachine_round() {
 
                             let profit = parseInt(document.getElementById("bet").value) * 5 // probability 1/10
                             document.getElementById("information").innerHTML = `You have won ${profit} coins!`
-                            
+
                             document.getElementById("audio").innerHTML = `<audio autoplay controls> <source src= "assets/audio/coins-xl.mp3" type = "audio/mpeg"> </audio>`
-                            
+
                             slotMachine_profits(profit)
 
                         } else {
@@ -232,10 +232,8 @@ function slotMachine_round() {
                             document.getElementById("column3").style.backgroundColor = "red"
 
                             document.getElementById("information").innerHTML = "Unfortunately you lost!"
-                            
+
                             document.getElementById("audio").innerHTML = `<audio autoplay controls> <source src= "assets/audio/lost.mp3" type = "audio/mpeg"> </audio>`
-                            
-                            slotMachine_profits(profit)
                         }
                     }
                 }
@@ -270,7 +268,7 @@ document.getElementById("account-balance").innerHTML = creditStandard
 
 
 function slotMachine_losses() {
-    
+
     // Losses (bets); subtract the bets from the credit
 
     let creditNew = parseInt(document.getElementById("account-balance").innerHTML) - parseInt(document.getElementById("bet").value)
@@ -296,14 +294,14 @@ function slotMachine_profits(profit) {
 // Payouts (possible profits)
 
 function slotMachine_possibleProfits() {
-    
-let winningCombinations1 = parseInt(document.getElementById("bet").value) * 5 // yellow = x x y / y x x
-let winningCombinations2 = parseInt(document.getElementById("bet").value) * 50 // green = x x x
-let winningCombinations3 = parseInt(document.getElementById("bet").value) * 750 // blue = 0 0 0
 
-document.getElementById("winning-combinations-1").innerHTML = winningCombinations1;
-document.getElementById("winning-combinations-2").innerHTML = winningCombinations2;
-document.getElementById("winning-combinations-3").innerHTML = winningCombinations3;
+    let winningCombinations1 = parseInt(document.getElementById("bet").value) * 5 // yellow = x x y / y x x
+    let winningCombinations2 = parseInt(document.getElementById("bet").value) * 50 // green = x x x
+    let winningCombinations3 = parseInt(document.getElementById("bet").value) * 750 // blue = 0 0 0
+
+    document.getElementById("winning-combinations-1").innerHTML = winningCombinations1;
+    document.getElementById("winning-combinations-2").innerHTML = winningCombinations2;
+    document.getElementById("winning-combinations-3").innerHTML = winningCombinations3;
 
 }
 
