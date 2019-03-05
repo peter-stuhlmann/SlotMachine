@@ -1,5 +1,7 @@
 # Slot Maschine
 
+![MIT License](https://img.shields.io/github/license/peter-stuhlmann/SlotMachine.svg) ![Code size](https://img.shields.io/github/languages/code-size/peter-stuhlmann/SlotMachine.svg) ![downloads](https://img.shields.io/github/downloads/peter-stuhlmann/SlotMachine/total.svg) ![open issues](https://img.shields.io/github/issues/peter-stuhlmann/SlotMachine.svg) ![closed issues](https://img.shields.io/github/issues-closed/peter-stuhlmann/SlotMachine.svg)
+
 ## (1) blanco
 ![Screenshot](assets/img/screenshot.png "Desktop version")
 
