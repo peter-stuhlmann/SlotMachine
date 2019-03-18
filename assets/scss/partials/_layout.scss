@@ -31,9 +31,9 @@ h2 {
     justify-content: space-between;
     margin: 20px 0;
 
-    #column1,
-    #column2,
-    #column3 {
+    #firstColumn,
+    #secondColumn,
+    #thirdColumn {
         flex: 0 0 32%;
         height: 250px;
         background-color: $primaryColor;

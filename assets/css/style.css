@@ -22,9 +22,9 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin: 20px 0; }
-  .slotMaschine-columns #column1,
-  .slotMaschine-columns #column2,
-  .slotMaschine-columns #column3 {
+  .slotMaschine-columns #firstColumn,
+  .slotMaschine-columns #secondColumn,
+  .slotMaschine-columns #thirdColumn {
     flex: 0 0 32%;
     height: 250px;
     background-color: hotpink;
@@ -33,9 +33,9 @@ h2 {
     box-sizing: border-box;
     font-size: 50px;
     text-align: center; }
-    .slotMaschine-columns #column1 img,
-    .slotMaschine-columns #column2 img,
-    .slotMaschine-columns #column3 img {
+    .slotMaschine-columns #firstColumn img,
+    .slotMaschine-columns #secondColumn img,
+    .slotMaschine-columns #thirdColumn img {
       width: 100%; }
 
 .chance-of-winning {
@@ -123,25 +123,18 @@ footer {
   margin-bottom: 10px;
   margin-left: 2px;
   margin-right: 2px; }
-
-.sm-button-3d:active:focus,
-.sm-button-3d:focus:hover,
-.sm-button-3d:focus {
-  -moz-outline-style: none;
-  outline: medium none; }
-
-.sm-button-3d:active,
-.sm-button-3d.active {
-  top: 2px; }
+  .sm-button-3d:active:focus, .sm-button-3d:focus:hover, .sm-button-3d:focus {
+    -moz-outline-style: none;
+    outline: medium none; }
+  .sm-button-3d:active {
+    top: 2px; }
 
 #play-button {
   box-shadow: 0 0 0 1px #b93802 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #AA0000, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
   background-color: #D73814;
   border-radius: 10px; }
-
-#play-button:active,
-#play-button.active {
-  box-shadow: 0 0 0 1px #b93802 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
-  background-color: #D73814; }
+  #play-button:active {
+    box-shadow: 0 0 0 1px #b93802 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+    background-color: #D73814; }
 
 /*# sourceMappingURL=style.css.map */

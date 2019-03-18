@@ -1,165 +1,67 @@
 // Input field #bet
-let bet = document.getElementById("bet").value
-
-
+let bet = document.querySelector("#bet").value
 
 function slotMachine_randomize() {
 
     // integer random number between 0 and <1 multiplied by 10
-    // result is output on the HTML page in the element with the ID column1 respectively column2 respectively column3
+    // result is output on the HTML page in the element with the ID firstColumn respectively secondColumn respectively thirdColumn
 
+    // firstColumn
 
-    // column1
+    firstColumn = Math.floor(Math.random() * 10);
 
-    column1 = Math.floor(Math.random() * 10);
-
-    switch (column1) {
-
-        case 0:
-            column1 = `<img src="assets/img/dollar.png">`;
-            break;
-
-        case 1:
-            column1 = `<img src="assets/img/coconut.png">`;
-            break;
-
-        case 2:
-            column1 = `<img src="assets/img/bananas.png">`;
-            break;
-
-        case 3:
-            column1 = `<img src="assets/img/kiwi.png">`;
-            break;
-
-        case 4:
-            column1 = `<img src="assets/img/watermelon.png">`;
-            break;
-
-        case 5:
-            column1 = `<img src="assets/img/cherry.png">`;
-            break;
-
-        case 6:
-            column1 = `<img src="assets/img/orange.png">`;
-            break;
-
-        case 7:
-            column1 = `<img src="assets/img/tomato.png">`;
-            break;
-
-        case 8:
-            column1 = `<img src="assets/img/apple.png">`;
-            break;
-
-        case 9:
-            column1 = `<img src="assets/img/strawberry.png">`;
-            break;
+    switch (firstColumn) {
+        case 0: firstColumn = `<img src="assets/img/dollar.png">`; break;
+        case 1: firstColumn = `<img src="assets/img/coconut.png">`; break;
+        case 2: firstColumn = `<img src="assets/img/bananas.png">`; break;
+        case 3: firstColumn = `<img src="assets/img/kiwi.png">`; break;
+        case 4: firstColumn = `<img src="assets/img/watermelon.png">`; break;
+        case 5: firstColumn = `<img src="assets/img/cherry.png">`; break;
+        case 6: firstColumn = `<img src="assets/img/orange.png">`; break;
+        case 7: firstColumn = `<img src="assets/img/tomato.png">`; break;
+        case 8: firstColumn = `<img src="assets/img/apple.png">`; break;
+        case 9: firstColumn = `<img src="assets/img/strawberry.png">`; break;
     }
+    document.querySelector("#firstColumn").innerHTML = firstColumn
 
-    document.getElementById("column1").innerHTML = column1
 
+    // secondColumn
 
-    // column2
+    secondColumn = Math.floor(Math.random() * 10);
 
-    column2 = Math.floor(Math.random() * 10);
-
-    switch (column2) {
-
-        case 0:
-            column2 = `<img src="assets/img/dollar.png">`;
-            break;
-
-        case 1:
-            column2 = `<img src="assets/img/coconut.png">`;
-            break;
-
-        case 2:
-            column2 = `<img src="assets/img/bananas.png">`;
-            break;
-
-        case 3:
-            column2 = `<img src="assets/img/kiwi.png">`;
-            break;
-
-        case 4:
-            column2 = `<img src="assets/img/watermelon.png">`;
-            break;
-
-        case 5:
-            column2 = `<img src="assets/img/cherry.png">`;
-            break;
-
-        case 6:
-            column2 = `<img src="assets/img/orange.png">`;
-            break;
-
-        case 7:
-            column2 = `<img src="assets/img/tomato.png">`;
-            break;
-
-        case 8:
-            column2 = `<img src="assets/img/apple.png">`;
-            break;
-
-        case 9:
-            column2 = `<img src="assets/img/strawberry.png">`;
-            break;
+    switch (secondColumn) {
+        case 0: secondColumn = `<img src="assets/img/dollar.png">`; break;
+        case 1: secondColumn = `<img src="assets/img/coconut.png">`; break;
+        case 2: secondColumn = `<img src="assets/img/bananas.png">`; break;
+        case 3: secondColumn = `<img src="assets/img/kiwi.png">`; break;
+        case 4: secondColumn = `<img src="assets/img/watermelon.png">`; break;
+        case 5: secondColumn = `<img src="assets/img/cherry.png">`; break;
+        case 6: secondColumn = `<img src="assets/img/orange.png">`; break;
+        case 7: secondColumn = `<img src="assets/img/tomato.png">`; break;
+        case 8: secondColumn = `<img src="assets/img/apple.png">`; break;
+        case 9: secondColumn = `<img src="assets/img/strawberry.png">`; break;
     }
+    document.querySelector("#secondColumn").innerHTML = secondColumn
 
-    document.getElementById("column2").innerHTML = column2
 
+    // thirdColumn
 
-    // column3
+    thirdColumn = Math.floor(Math.random() * 10);
 
-    column3 = Math.floor(Math.random() * 10);
-
-    switch (column3) {
-
-        case 0:
-            column3 = `<img src="assets/img/dollar.png">`;
-            break;
-
-        case 1:
-            column3 = `<img src="assets/img/coconut.png">`;
-            break;
-
-        case 2:
-            column3 = `<img src="assets/img/bananas.png">`;
-            break;
-
-        case 3:
-            column3 = `<img src="assets/img/kiwi.png">`;
-            break;
-
-        case 4:
-            column3 = `<img src="assets/img/watermelon.png">`;
-            break;
-
-        case 5:
-            column3 = `<img src="assets/img/cherry.png">`;
-            break;
-
-        case 6:
-            column3 = `<img src="assets/img/orange.png">`;
-            break;
-
-        case 7:
-            column3 = `<img src="assets/img/tomato.png">`;
-            break;
-
-        case 8:
-            column3 = `<img src="assets/img/apple.png">`;
-            break;
-
-        case 9:
-            column3 = `<img src="assets/img/strawberry.png">`;
-            break;
+    switch (thirdColumn) {
+        case 0: thirdColumn = `<img src="assets/img/dollar.png">`; break;
+        case 1: thirdColumn = `<img src="assets/img/coconut.png">`; break;
+        case 2: thirdColumn = `<img src="assets/img/bananas.png">`; break;
+        case 3: thirdColumn = `<img src="assets/img/kiwi.png">`; break;
+        case 4: thirdColumn = `<img src="assets/img/watermelon.png">`; break;
+        case 5: thirdColumn = `<img src="assets/img/cherry.png">`; break;
+        case 6: thirdColumn = `<img src="assets/img/orange.png">`; break;
+        case 7: thirdColumn = `<img src="assets/img/tomato.png">`; break;
+        case 8: thirdColumn = `<img src="assets/img/apple.png">`; break;
+        case 9: thirdColumn = `<img src="assets/img/strawberry.png">`; break;
     }
-
-    document.getElementById("column3").innerHTML = column3
-
+    document.querySelector("#thirdColumn").innerHTML = thirdColumn
 }
-
 
 
 let i = 1;
@@ -175,140 +77,115 @@ function slotMachine_round() {
             slotMachine_round();
         } else {
 
-            if (column1 == '<img src="assets/img/dollar.png">' && column2 == '<img src="assets/img/dollar.png">' && column3 == '<img src="assets/img/dollar.png">') {
-                document.getElementById("column1").style.backgroundColor = "blue"
-                document.getElementById("column2").style.backgroundColor = "blue"
-                document.getElementById("column3").style.backgroundColor = "blue"
+            if (firstColumn == '<img src="assets/img/dollar.png">' && secondColumn == '<img src="assets/img/dollar.png">' && thirdColumn == '<img src="assets/img/dollar.png">') {
+                document.querySelector("#firstColumn").style.backgroundColor = "blue"
+                document.querySelector("#secondColumn").style.backgroundColor = "blue"
+                document.querySelector("#thirdColumn").style.backgroundColor = "blue"
 
-                let profit = parseInt(document.getElementById("bet").value) * 750 // probability 1/1000
-                document.getElementById("information").innerHTML = `JACKPOT! You have won ${profit} coins!`
+                let profit = parseInt(document.querySelector("#bet").value) * 750 // probability 1/1000
+                document.querySelector("#information").innerHTML = `JACKPOT! You have won ${profit} coins!`
 
-                document.getElementById("audio").innerHTML = `<audio autoplay controls> <source src= "assets/audio/jingle-1.mp3" type = "audio/mpeg"> </audio>`
+                document.querySelector("#audio").innerHTML = `<audio autoplay controls><source src="assets/audio/jingle-1.mp3" type="audio/mpeg"></audio>`
 
                 slotMachine_profits(profit)
 
             } else {
-                if (column1 == column2 && column2 == column3) {
-                    document.getElementById("column1").style.backgroundColor = "green"
-                    document.getElementById("column2").style.backgroundColor = "green"
-                    document.getElementById("column3").style.backgroundColor = "green"
+                if (firstColumn == secondColumn && secondColumn == thirdColumn) {
+                    document.querySelector("#firstColumn").style.backgroundColor = "green"
+                    document.querySelector("#secondColumn").style.backgroundColor = "green"
+                    document.querySelector("#thirdColumn").style.backgroundColor = "green"
 
-                    let profit = parseInt(document.getElementById("bet").value) * 50 // probability 1/100
-                    document.getElementById("information").innerHTML = `Congrats! You have won ${profit} coins!`
+                    let profit = parseInt(document.querySelector("#bet").value) * 50 // probability 1/100
+                    document.querySelector("#information").innerHTML = `Congrats! You have won ${profit} coins!`
 
-                    document.getElementById("audio").innerHTML = `<audio autoplay controls> <source src= "assets/audio/jingle-1.mp3" type = "audio/mpeg"> </audio>`
+                    document.querySelector("#audio").innerHTML = `<audio autoplay controls><source src="assets/audio/jingle-1.mp3" type="audio/mpeg"></audio>`
 
                     slotMachine_profits(profit)
 
                 } else {
-                    if (column1 == column2) {
-                        document.getElementById("column1").style.backgroundColor = "yellow"
-                        document.getElementById("column2").style.backgroundColor = "yellow"
-                        document.getElementById("column3").style.backgroundColor = "red"
+                    if (firstColumn == secondColumn) {
+                        document.querySelector("#firstColumn").style.backgroundColor = "yellow"
+                        document.querySelector("#secondColumn").style.backgroundColor = "yellow"
+                        document.querySelector("#thirdColumn").style.backgroundColor = "red"
 
-                        let profit = parseInt(document.getElementById("bet").value) * 5 // probability 1/10
-                        document.getElementById("information").innerHTML = `You have won ${profit} coins!`
+                        let profit = parseInt(document.querySelector("#bet").value) * 5 // probability 1/10
+                        document.querySelector("#information").innerHTML = `You have won ${profit} coins!`
 
-                        document.getElementById("audio").innerHTML = `<audio autoplay controls> <source src= "assets/audio/coins-xl.mp3" type = "audio/mpeg"> </audio>`
+                        document.querySelector("#audio").innerHTML = `<audio autoplay controls><source src="assets/audio/coins-xl.mp3" type="audio/mpeg"></audio>`
 
                         slotMachine_profits(profit)
 
                     } else {
-                        if (column2 == column3) {
-                            document.getElementById("column1").style.backgroundColor = "red"
-                            document.getElementById("column2").style.backgroundColor = "yellow"
-                            document.getElementById("column3").style.backgroundColor = "yellow"
+                        if (secondColumn == thirdColumn) {
+                            document.querySelector("#firstColumn").style.backgroundColor = "red"
+                            document.querySelector("#secondColumn").style.backgroundColor = "yellow"
+                            document.querySelector("#thirdColumn").style.backgroundColor = "yellow"
 
-                            let profit = parseInt(document.getElementById("bet").value) * 5 // probability 1/10
-                            document.getElementById("information").innerHTML = `You have won ${profit} coins!`
+                            let profit = parseInt(document.querySelector("#bet").value) * 5 // probability 1/10
+                            document.querySelector("#information").innerHTML = `You have won ${profit} coins!`
 
-                            document.getElementById("audio").innerHTML = `<audio autoplay controls> <source src= "assets/audio/coins-xl.mp3" type = "audio/mpeg"> </audio>`
+                            document.querySelector("#audio").innerHTML = `<audio autoplay controls><source src="assets/audio/coins-xl.mp3" type="audio/mpeg"></audio>`
 
                             slotMachine_profits(profit)
 
                         } else {
-                            document.getElementById("column1").style.backgroundColor = "red"
-                            document.getElementById("column2").style.backgroundColor = "red"
-                            document.getElementById("column3").style.backgroundColor = "red"
+                            document.querySelector("#firstColumn").style.backgroundColor = "red"
+                            document.querySelector("#secondColumn").style.backgroundColor = "red"
+                            document.querySelector("#thirdColumn").style.backgroundColor = "red"
 
-                            document.getElementById("information").innerHTML = "Unfortunately you lost!"
+                            document.querySelector("#information").innerHTML = "Unfortunately you lost!"
 
-                            document.getElementById("audio").innerHTML = `<audio autoplay controls> <source src= "assets/audio/lost.mp3" type = "audio/mpeg"> </audio>`
+                            document.querySelector("#audio").innerHTML = `<audio autoplay controls><source src="assets/audio/lost.mp3" type="audio/mpeg"></audio>`
                         }
                     }
                 }
             }
         }
-    }, 100) // 100 = 1/10 second
+    }, 100) // 100 => 100 ms = 1/10 second
 }
-
-
 
 function slotMachine_reset() {
 
-    // to play it several times (reset i from 19 to 1 after every round)
-    i = 1;
-
+    i = 1; // to play it several times (reset i from 19 to 1 after every round)
+    
     // reset the background-color after every round
-    document.getElementById("column1").style.backgroundColor = "hotpink";
-    document.getElementById("column2").style.backgroundColor = "hotpink";
-    document.getElementById("column3").style.backgroundColor = "hotpink";
+    document.querySelector("#firstColumn").style.backgroundColor = "hotpink";
+    document.querySelector("#secondColumn").style.backgroundColor = "hotpink";
+    document.querySelector("#thirdColumn").style.backgroundColor = "hotpink";
 
-    // reset the content of #ginformation after every round
-    document.getElementById("information").innerHTML = ""
+    // reset the content of #information after every round
+    document.querySelector("#information").innerHTML = ""
 }
-
-
 
 // Account balance
-
-let creditStandard = 100 // 100 coins
-
-document.getElementById("account-balance").innerHTML = creditStandard
-
+document.querySelector("#account-balance").innerHTML = 100 // 100 coins
 
 function slotMachine_losses() {
-
     // Losses (bets); subtract the bets from the credit
-
-    let creditNew = parseInt(document.getElementById("account-balance").innerHTML) - parseInt(document.getElementById("bet").value)
-
-    document.getElementById("account-balance").innerHTML = creditNew
-
+    let creditNew = parseInt(document.querySelector("#account-balance").innerHTML) - parseInt(document.querySelector("#bet").value)
+    document.querySelector("#account-balance").innerHTML = creditNew
 }
-
-
 
 function slotMachine_profits(profit) {
 
     // Profits; add profits to the credit
-
-    let creditNew = parseInt(document.getElementById("account-balance").innerHTML) + profit
-
-    document.getElementById("account-balance").innerHTML = creditNew
-
+    let creditNew = parseInt(document.querySelector("#account-balance").innerHTML) + profit
+    document.querySelector("#account-balance").innerHTML = creditNew
 }
-
-
 
 // Payouts (possible profits)
-
 function slotMachine_possibleProfits() {
 
-    let winningCombinations1 = parseInt(document.getElementById("bet").value) * 5 // yellow = x x y / y x x
-    let winningCombinations2 = parseInt(document.getElementById("bet").value) * 50 // green = x x x
-    let winningCombinations3 = parseInt(document.getElementById("bet").value) * 750 // blue = 0 0 0
+    let winningCombinations1 = parseInt(document.querySelector("#bet").value) * 5 // yellow = x x y / y x x
+    let winningCombinations2 = parseInt(document.querySelector("#bet").value) * 50 // green = x x x
+    let winningCombinations3 = parseInt(document.querySelector("#bet").value) * 750 // blue = 0 0 0
 
-    document.getElementById("winning-combinations-1").innerHTML = winningCombinations1;
-    document.getElementById("winning-combinations-2").innerHTML = winningCombinations2;
-    document.getElementById("winning-combinations-3").innerHTML = winningCombinations3;
-
+    document.querySelector("#winning-combinations-1").innerHTML = winningCombinations1
+    document.querySelector("#winning-combinations-2").innerHTML = winningCombinations2
+    document.querySelector("#winning-combinations-3").innerHTML = winningCombinations3
 }
 
-
-
 // buttons on HTML page
-
 document.querySelector('#play-button').addEventListener('click', function () {
     slotMachine_round()
     slotMachine_reset()
