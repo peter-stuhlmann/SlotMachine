@@ -1,11 +1,13 @@
+const $ = selector => document.querySelector(selector)
+
 // Input field #bet
-let bet = document.querySelector("#bet").value
+let bet = $("#bet").value
 
 function slotMachine_randomize() {
 
     // integer random number between 0 and <1 multiplied by 10
     // result is output on the HTML page in the element with the ID firstColumn respectively secondColumn respectively thirdColumn
-
+    
     // firstColumn
 
     firstColumn = Math.floor(Math.random() * 10);
@@ -22,7 +24,7 @@ function slotMachine_randomize() {
         case 8: firstColumn = `<img src="assets/img/apple.png">`; break;
         case 9: firstColumn = `<img src="assets/img/strawberry.png">`; break;
     }
-    document.querySelector("#firstColumn").innerHTML = firstColumn
+    $("#firstColumn").innerHTML = firstColumn
 
 
     // secondColumn
@@ -41,7 +43,7 @@ function slotMachine_randomize() {
         case 8: secondColumn = `<img src="assets/img/apple.png">`; break;
         case 9: secondColumn = `<img src="assets/img/strawberry.png">`; break;
     }
-    document.querySelector("#secondColumn").innerHTML = secondColumn
+    $("#secondColumn").innerHTML = secondColumn
 
 
     // thirdColumn
@@ -60,7 +62,7 @@ function slotMachine_randomize() {
         case 8: thirdColumn = `<img src="assets/img/apple.png">`; break;
         case 9: thirdColumn = `<img src="assets/img/strawberry.png">`; break;
     }
-    document.querySelector("#thirdColumn").innerHTML = thirdColumn
+    $("#thirdColumn").innerHTML = thirdColumn
 }
 
 
@@ -78,64 +80,64 @@ function slotMachine_round() {
         } else {
 
             if (firstColumn == '<img src="assets/img/dollar.png">' && secondColumn == '<img src="assets/img/dollar.png">' && thirdColumn == '<img src="assets/img/dollar.png">') {
-                document.querySelector("#firstColumn").style.backgroundColor = "blue"
-                document.querySelector("#secondColumn").style.backgroundColor = "blue"
-                document.querySelector("#thirdColumn").style.backgroundColor = "blue"
+                $("#firstColumn").style.backgroundColor = "blue"
+                $("#secondColumn").style.backgroundColor = "blue"
+                $("#thirdColumn").style.backgroundColor = "blue"
 
-                let profit = parseInt(document.querySelector("#bet").value) * 750 // probability 1/1000
-                document.querySelector("#information").innerHTML = `JACKPOT! You have won ${profit} coins!`
+                let profit = parseInt($("#bet").value) * 750 // probability 1/1000
+                $("#information").innerHTML = `JACKPOT! You have won ${profit} coins!`
 
-                document.querySelector("#audio").innerHTML = `<audio autoplay controls><source src="assets/audio/jingle-1.mp3" type="audio/mpeg"></audio>`
+                $("#audio").innerHTML = `<audio autoplay controls><source src="assets/audio/jingle-1.mp3" type="audio/mpeg"></audio>`
 
                 slotMachine_profits(profit)
 
             } else {
                 if (firstColumn == secondColumn && secondColumn == thirdColumn) {
-                    document.querySelector("#firstColumn").style.backgroundColor = "green"
-                    document.querySelector("#secondColumn").style.backgroundColor = "green"
-                    document.querySelector("#thirdColumn").style.backgroundColor = "green"
+                    $("#firstColumn").style.backgroundColor = "green"
+                    $("#secondColumn").style.backgroundColor = "green"
+                    $("#thirdColumn").style.backgroundColor = "green"
 
-                    let profit = parseInt(document.querySelector("#bet").value) * 50 // probability 1/100
-                    document.querySelector("#information").innerHTML = `Congrats! You have won ${profit} coins!`
+                    let profit = parseInt($("#bet").value) * 50 // probability 1/100
+                    $("#information").innerHTML = `Congrats! You have won ${profit} coins!`
 
-                    document.querySelector("#audio").innerHTML = `<audio autoplay controls><source src="assets/audio/jingle-1.mp3" type="audio/mpeg"></audio>`
+                    $("#audio").innerHTML = `<audio autoplay controls><source src="assets/audio/jingle-1.mp3" type="audio/mpeg"></audio>`
 
                     slotMachine_profits(profit)
 
                 } else {
                     if (firstColumn == secondColumn) {
-                        document.querySelector("#firstColumn").style.backgroundColor = "yellow"
-                        document.querySelector("#secondColumn").style.backgroundColor = "yellow"
-                        document.querySelector("#thirdColumn").style.backgroundColor = "red"
+                        $("#firstColumn").style.backgroundColor = "yellow"
+                        $("#secondColumn").style.backgroundColor = "yellow"
+                        $("#thirdColumn").style.backgroundColor = "red"
 
-                        let profit = parseInt(document.querySelector("#bet").value) * 5 // probability 1/10
-                        document.querySelector("#information").innerHTML = `You have won ${profit} coins!`
+                        let profit = parseInt($("#bet").value) * 5 // probability 1/10
+                        $("#information").innerHTML = `You have won ${profit} coins!`
 
-                        document.querySelector("#audio").innerHTML = `<audio autoplay controls><source src="assets/audio/coins-xl.mp3" type="audio/mpeg"></audio>`
+                        $("#audio").innerHTML = `<audio autoplay controls><source src="assets/audio/coins-xl.mp3" type="audio/mpeg"></audio>`
 
                         slotMachine_profits(profit)
 
                     } else {
                         if (secondColumn == thirdColumn) {
-                            document.querySelector("#firstColumn").style.backgroundColor = "red"
-                            document.querySelector("#secondColumn").style.backgroundColor = "yellow"
-                            document.querySelector("#thirdColumn").style.backgroundColor = "yellow"
+                            $("#firstColumn").style.backgroundColor = "red"
+                            $("#secondColumn").style.backgroundColor = "yellow"
+                            $("#thirdColumn").style.backgroundColor = "yellow"
 
-                            let profit = parseInt(document.querySelector("#bet").value) * 5 // probability 1/10
-                            document.querySelector("#information").innerHTML = `You have won ${profit} coins!`
+                            let profit = parseInt($("#bet").value) * 5 // probability 1/10
+                            $("#information").innerHTML = `You have won ${profit} coins!`
 
-                            document.querySelector("#audio").innerHTML = `<audio autoplay controls><source src="assets/audio/coins-xl.mp3" type="audio/mpeg"></audio>`
+                            $("#audio").innerHTML = `<audio autoplay controls><source src="assets/audio/coins-xl.mp3" type="audio/mpeg"></audio>`
 
                             slotMachine_profits(profit)
 
                         } else {
-                            document.querySelector("#firstColumn").style.backgroundColor = "red"
-                            document.querySelector("#secondColumn").style.backgroundColor = "red"
-                            document.querySelector("#thirdColumn").style.backgroundColor = "red"
+                            $("#firstColumn").style.backgroundColor = "red"
+                            $("#secondColumn").style.backgroundColor = "red"
+                            $("#thirdColumn").style.backgroundColor = "red"
 
-                            document.querySelector("#information").innerHTML = "Unfortunately you lost!"
+                            $("#information").innerHTML = "Unfortunately you lost!"
 
-                            document.querySelector("#audio").innerHTML = `<audio autoplay controls><source src="assets/audio/lost.mp3" type="audio/mpeg"></audio>`
+                            $("#audio").innerHTML = `<audio autoplay controls><source src="assets/audio/lost.mp3" type="audio/mpeg"></audio>`
                         }
                     }
                 }
@@ -149,46 +151,48 @@ function slotMachine_reset() {
     i = 1; // to play it several times (reset i from 19 to 1 after every round)
     
     // reset the background-color after every round
-    document.querySelector("#firstColumn").style.backgroundColor = "hotpink";
-    document.querySelector("#secondColumn").style.backgroundColor = "hotpink";
-    document.querySelector("#thirdColumn").style.backgroundColor = "hotpink";
+    $("#firstColumn").style.backgroundColor = "hotpink";
+    $("#secondColumn").style.backgroundColor = "hotpink";
+    $("#thirdColumn").style.backgroundColor = "hotpink";
 
     // reset the content of #information after every round
-    document.querySelector("#information").innerHTML = ""
+    $("#information").innerHTML = ""
 }
 
 // Account balance
-document.querySelector("#account-balance").innerHTML = 100 // 100 coins
+$("#account-balance").innerHTML = 100 // 100 coins
 
 function slotMachine_losses() {
     // Losses (bets); subtract the bets from the credit
-    let creditNew = parseInt(document.querySelector("#account-balance").innerHTML) - parseInt(document.querySelector("#bet").value)
-    document.querySelector("#account-balance").innerHTML = creditNew
+    let creditNew = parseInt($("#account-balance").innerHTML) - parseInt($("#bet").value)
+    $("#account-balance").innerHTML = creditNew
 }
 
 function slotMachine_profits(profit) {
 
     // Profits; add profits to the credit
-    let creditNew = parseInt(document.querySelector("#account-balance").innerHTML) + profit
-    document.querySelector("#account-balance").innerHTML = creditNew
+    let creditNew = parseInt($("#account-balance").innerHTML) + profit
+    $("#account-balance").innerHTML = creditNew
 }
 
 // Payouts (possible profits)
 function slotMachine_possibleProfits() {
-
-    let winningCombinations1 = parseInt(document.querySelector("#bet").value) * 5 // yellow = x x y / y x x
-    let winningCombinations2 = parseInt(document.querySelector("#bet").value) * 50 // green = x x x
-    let winningCombinations3 = parseInt(document.querySelector("#bet").value) * 750 // blue = 0 0 0
-
-    document.querySelector("#winning-combinations-1").innerHTML = winningCombinations1
-    document.querySelector("#winning-combinations-2").innerHTML = winningCombinations2
-    document.querySelector("#winning-combinations-3").innerHTML = winningCombinations3
+    $("#winning-combinations-1").innerHTML = parseInt($("#bet").value) * 5 // yellow = x x y / y x x
+    $("#winning-combinations-2").innerHTML = parseInt($("#bet").value) * 50 // green = x x x
+    $("#winning-combinations-3").innerHTML = parseInt($("#bet").value) * 750 // blue = 0 0 0
 }
 
 // buttons on HTML page
-document.querySelector('#play-button').addEventListener('click', function () {
-    slotMachine_round()
-    slotMachine_reset()
-    slotMachine_losses()
-    slotMachine_possibleProfits()
+
+$('#play-button').addEventListener('click', function () {
+    if (parseInt($("#account-balance").innerHTML) >= $("#bet").value) {
+        $('.slotMaschine-columns').style.display = ""
+        slotMachine_round()
+        slotMachine_reset()
+        slotMachine_losses()
+        slotMachine_possibleProfits()
+    } else {
+        $('.slotMaschine-columns').style.display = "none"
+        $('#information').innerHTML = 'Your credit is unfortunately not enough. =('
+    }   
 })
