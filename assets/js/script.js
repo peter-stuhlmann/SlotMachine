@@ -182,6 +182,10 @@ function slotMachine_possibleProfits() {
     $("#winning-combinations-3").innerHTML = parseInt($("#bet").value) * 750 // blue = 0 0 0
 }
 
+$('#reset-button').addEventListener('click', function () {
+    $("#account-balance").innerHTML = 500 // 100 coins
+})
+
 // buttons on HTML page
 
 $('#play-button').addEventListener('click', function () {

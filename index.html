@@ -13,6 +13,7 @@
 
     <main>
         <div class="account-balance">Your account balance: <span id="account-balance"></span> coins</div>
+        <input type="button" id="reset-button" value="Reset">
 
         <h1>SlotMaschine</h1>
         <h2>developed by Peter R. Stuhlmann</h2>
@@ -37,14 +38,14 @@
             <label>Your bet:</label>
             <input id="bet" type="number" min="0" step="1" value="1" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57">
 
-            <input type="button" class="sm-button-3d" id="play-button" value="Play!">
+            <input type="button" class="sm-button-3d" id="play-button" value="Play!"><br>
         </div>
 
         <div class="slotMaschine-columns">
 
-            <div id="column1"></div>
-            <div id="column2"></div>
-            <div id="column3"></div>
+            <div id="firstColumn"></div>
+            <div id="secondColumn"></div>
+            <div id="thirdColumn"></div>
 
         </div>
 
